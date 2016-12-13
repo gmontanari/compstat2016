@@ -44,7 +44,7 @@ ui <- dashboardPage(skin = "purple",
                                     height = 350
                                   ),
                                   box(
-                                    selectInput("dataset", "Choose a dataset:", choices = c("Datos Simulados")),
+                                    selectInput("dataset", "Elegir Archivo:", choices = c("Datos Simulados")),
                                     radioButtons("filetype", "File type:",choices = c("csv")),
                                     downloadButton('downloadData', 'Download'),
                                     height = 350
@@ -65,7 +65,7 @@ ui <- dashboardPage(skin = "purple",
                                     height = 400
                                   ),
                                   box(
-                                    selectInput("datasetb", "Choose a dataset:", choices = c("Datos Simulados")),
+                                    selectInput("datasetb", "Elegir Archivo:", choices = c("Datos Simulados")),
                                     radioButtons("filetypeb", "File type:",choices = c("csv")),
                                     downloadButton('downloadDatab', 'Download'),
                                     height = 400
