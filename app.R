@@ -38,7 +38,7 @@ ui <- dashboardPage(skin = "purple",
                                 fluidRow(
                                   box(
                                     title = "Datos",
-                                    sliderInput("slider2", "Cantidad simulaciones generar:", min=1, max=10000, value=500),
+                                    sliderInput("slider2", "Cantidad simulaciones generar:", min=1, max=1000, value=200),
                                     numericInput("nLambda",label = "Densidad de la Exponencial (Lambda)", min = 0.001, max = 10, value = 0.1, step = 0.3),
                                     numericInput("nbins",label = "Bins del Histograma", min = 10, max = 80, value = 20, step = 1),
                                     height = 350
@@ -58,7 +58,7 @@ ui <- dashboardPage(skin = "purple",
                                 fluidRow(
                                   box(
                                     title = "Datos",
-                                    sliderInput("slider2b", "Cantidad simulaciones generar:", min=1, max=10000, value=500),
+                                    sliderInput("slider2b", "Cantidad simulaciones generar:", min=1, max=1000, value=200),
                                     numericInput("lambda",label = "Lambda (escala), mayor a cero", min = 1, max = 1, value = 1),
                                     numericInput("k",label = "K (shape), mayor a cero", min = 0.5, max = 5, value = 0.5, step = 0.5),
                                     numericInput("nbinsb",label = "Bins del Histograma", min = 10, max = 80, value = 20, step = 1),
