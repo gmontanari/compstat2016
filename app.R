@@ -1,4 +1,8 @@
 ## app.R ##
+## Tareas de Estadística Computacional - Guillermina Montanari
+## Otoño - Invierno 2016
+##
+
 library(dplyr)
 library(shinydashboard)
 library(ggplot2)
