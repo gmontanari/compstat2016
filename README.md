@@ -15,4 +15,4 @@ Tareas de la materia, se encuentran dentro de un archivo llamado app.R y desde a
 
 Dentro del repositorio también se encuentra el documento PDF, que como tarea, escribimos nuestro entendimiento del artículo "The Markov Chain Monte Carlo Revolution”" https://math.uchicago.edu/~shmuel/Network-course-readings/MCMCRev.pdf"
 
-El trabajo final: Uso de MCMC en Minería de Texto se encuentra publicado en Youtbe: https://www.youtube.com/watch?v=2zkmqwgAflg
+El trabajo final: Uso de MCMC en Minería de Texto se encuentra publicado en Youtbe: https://www.youtube.com/watch?v=z4tpO3j1S3o&t=891s
