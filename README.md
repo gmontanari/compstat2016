@@ -1,7 +1,7 @@
 # **Estadística Computacional**
 ## **Otoño 2016**
 ## **Instituto Tecnológico Autómo de México**
-## Guillermina Montanari
+## Guillermina Montanari - 101421
 
 <div style = "height: 40px;"></div>
 
