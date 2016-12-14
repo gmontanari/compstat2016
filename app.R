@@ -120,7 +120,7 @@ ui <- dashboardPage(
                         tabItem(tabName = "tarea3",
                                 fluidRow(
                                   box(
-                                    title = "Datos para ingresar",
+                                    title = "Datos Función", status="info",solidHeader = TRUE,
                                     textInput("textInput1", value = "function (x) sin(x)", width=NULL, label = "Ingresa una función"),
                                     numericInput("minimo",label = "Valor Minimo", min = NA, max = NA, value = 10),
                                     numericInput("maximo",label = "Valor Máximo", min = NA, max = NA, value = 20),
@@ -128,6 +128,7 @@ ui <- dashboardPage(
                                     height = 350
                                   ),
                                   box(
+                                    title = "Datos Integración", status="info",solidHeader = TRUE,
                                     numericInput("nsim",label = "Número simulaciones", min = NA, max = NA, value = 10),
                                     numericInput("npuntos",label = "Puntos en el intervalo", min = NA, max = NA, value = 20),
                                     numericInput("alpha",label = "Confianza", min = 0.001, max = 1, value = 0.05, step = 0.01),
@@ -136,8 +137,14 @@ ui <- dashboardPage(
                                   )
                                 ),
                               fluidRow(
-                                  box(plotOutput("plot3_1", height = 200)),
-                                  box(plotOutput("plot3_2", height = 200))
+                                  box(
+                                    title = "Función a Integrar", status="info",solidHeader = TRUE,
+                                    plotOutput("plot3_1", height = 200)
+                                    ),
+                                  box(
+                                    title = "Ajuste", status="info",solidHeader = TRUE,
+                                    plotOutput("plot3_2", height = 200)
+                                    )
                                 )
                         ), #tabitem3
                         tabItem(tabName = "tarea4"),
@@ -288,6 +295,7 @@ server <- function(input, output) {
     plot(X, Y_x, pch=16)
     lines(X,Y_x,col="red")
   })
+  
   output$plot3_2 <- renderPlot({
     #U <- runif(input$npuntos,input$minimo, input$maximo)
     FUN1 <- reactive({
@@ -316,6 +324,7 @@ server <- function(input, output) {
     lines(xs,Int,type = "l",col=2)
     lines(xs,int.upper,type = "l",col=3)
     lines(xs,int.lower,type = "l",col=3)
+    
   })
 
   }
